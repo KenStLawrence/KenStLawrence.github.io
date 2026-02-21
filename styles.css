@@ -1,11 +1,13 @@
 /* System font stack for modern, clean appearance */
 :root {
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --primary-blue: #0066CC;
+    --accent-cyan: #00D9FF;
     --text-dark: #1a1a1a;
     --text-light: #666;
     --bg-white: #ffffff;
     --border-color: #e0e0e0;
-    --shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow: 0 4px 12px rgba(0, 102, 204, 0.15);
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 * {
@@ -34,6 +36,8 @@ body {
 /* Header */
 header {
     margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--accent-cyan);
 }
 
 header h1 {
@@ -41,6 +45,7 @@ header h1 {
     font-weight: 600;
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
+    color: var(--primary-blue);
 }
 
 .tagline {
@@ -52,6 +57,12 @@ header h1 {
 /* Sections */
 section {
     margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--accent-cyan);
+}
+
+section:last-of-type {
+    border-bottom: none;
 }
 
 h2 {
@@ -59,12 +70,13 @@ h2 {
     font-weight: 600;
     margin-bottom: 1.5rem;
     letter-spacing: -0.01em;
+    color: var(--primary-blue);
 }
 
 /* About section */
 .about p {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     line-height: 1.8;
     max-width: 700px;
 }
@@ -81,40 +93,43 @@ h2 {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     background-color: var(--bg-white);
-    box-shadow: var(--shadow);
-    transition: box-shadow 0.2s ease;
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.12);
+    transition: all 0.2s ease;
 }
 
 .project-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 32px rgba(0, 102, 204, 0.18);
+    transform: translateY(-2px);
 }
 
 .project-card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 0.75rem;
+    color: var(--primary-blue);
 }
 
 .project-card p {
     font-size: 0.95rem;
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 1rem;
     line-height: 1.7;
 }
 
 .card-link {
     display: inline-block;
-    color: var(--text-dark);
+    color: var(--accent-cyan);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-cyan);
     padding-bottom: 2px;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .card-link:hover {
-    border-bottom-color: var(--text-dark);
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
 }
 
 /* Links section */
@@ -126,23 +141,22 @@ h2 {
 }
 
 .links-list a {
-    color: var(--text-dark);
+    color: var(--accent-cyan);
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-cyan);
     padding-bottom: 2px;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .links-list a:hover {
-    border-bottom-color: var(--text-dark);
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
 }
 
 /* Footer */
 footer {
-    margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
     color: var(--text-light);
     font-size: 0.9rem;
 }
@@ -157,6 +171,7 @@ footer {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
+    color: var(--primary-blue);
 }
 
 .meta {
@@ -164,19 +179,20 @@ footer {
     color: var(--text-light);
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--accent-cyan);
 }
 
 .case-study h2 {
     font-size: 1.25rem;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    color: var(--primary-blue);
 }
 
 .case-study ul {
     margin-left: 1.5rem;
     margin-bottom: 1.5rem;
-    color: var(--text-light);
+    color: var(--text-dark);
 }
 
 .case-study li {
@@ -185,7 +201,7 @@ footer {
 }
 
 .case-study p {
-    color: var(--text-light);
+    color: var(--text-dark);
     margin-bottom: 1rem;
     line-height: 1.8;
 }
@@ -193,7 +209,7 @@ footer {
 .case-study-links {
     margin-top: 2.5rem;
     padding-top: 1.5rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--accent-cyan);
 }
 
 .case-study-links p {
@@ -201,31 +217,33 @@ footer {
 }
 
 .case-study-links a {
-    color: var(--text-dark);
+    color: var(--accent-cyan);
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-cyan);
     padding-bottom: 2px;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .case-study-links a:hover {
-    border-bottom-color: var(--text-dark);
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
 }
 
 .back-link {
     display: inline-block;
     margin-bottom: 2rem;
-    color: var(--text-dark);
+    color: var(--accent-cyan);
     text-decoration: none;
     font-weight: 500;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--accent-cyan);
     padding-bottom: 2px;
-    transition: border-color 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .back-link:hover {
-    border-bottom-color: var(--text-dark);
+    color: var(--primary-blue);
+    border-bottom-color: var(--primary-blue);
 }
 
 /* Mobile responsive */
