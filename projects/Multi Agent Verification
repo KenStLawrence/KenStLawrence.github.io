@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multi-Agent Artifact Validation Workflow - Case study">
+    <title>Multi-Agent Artifact Validation Workflow – Ken St. Lawrence</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../" class="back-link">← Back to home</a>
+
+        <article class="case-study">
+            <h1>Multi-Agent Artifact Validation Workflow</h1>
+            <div class="meta">
+                <strong>Role:</strong> Workflow design, multi-model validation, artifact production<br>
+                <strong>Tools:</strong> GPT, Claude, Gemini, Grok, Manus<br>
+                <strong>Status:</strong> Active methodology used to produce portfolio artifacts
+            </div>
+
+            <h2>Context</h2>
+            <p>AI-assisted development produces high-value exploratory threads that are often long, iterative, informal in tone, and context-heavy. Converting these into professional, hire-ready artifacts (README, case study, resume bullets) typically requires manual rewriting and tone correction.</p>
+
+            <p>Relying on a single model introduces risks such as blind spots, stylistic drift, and overfitting to internal context. The objective was to design a deterministic workflow that transforms exploratory threads into externally legible documentation, validated across independent models that do not share original project context.</p>
+
+            <h2>Strategy</h2>
+
+            <p><strong>1. Thread Consolidation</strong></p>
+            <ul>
+                <li>Exploratory build threads remain fluid during development</li>
+                <li>Artifacting begins only after project stabilization</li>
+                <li>Prevents premature compression from limiting iteration</li>
+            </ul>
+
+            <p><strong>2. Sequential Artifact Generation</strong></p>
+            <ul>
+                <li>Generate documents one at a time:
+                    <ul>
+                        <li>GitHub README (process depth)</li>
+                        <li>Portfolio case study (outcome-forward)</li>
+                        <li>Resume bullets (compressed impact)</li>
+                    </ul>
+                </li>
+                <li>Enforce structural rules:
+                    <ul>
+                        <li>One document per prompt</li>
+                        <li>No cross-document blending</li>
+                        <li>Quantified results where available</li>
+                        <li>Problem → iteration → constraints → results structure</li>
+                        <li>No hype or defensive language</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p><strong>3. Refinement Pass</strong></p>
+            <ul>
+                <li>Tone consistency across projects</li>
+                <li>Redundancy removal</li>
+                <li>Verb normalization</li>
+                <li>Elimination of self-evaluation language</li>
+            </ul>
+
+            <p><strong>4. Independent Multi-Model Review</strong></p>
+            <ul>
+                <li>Final deliverables reviewed by GPT, Claude, Gemini, and Grok</li>
+                <li>Models evaluated without full project history</li>
+                <li>Simulates external hiring-manager review conditions</li>
+                <li>Human judgment remains final authority</li>
+            </ul>
+
+            <h2>Outcome</h2>
+            <ul>
+                <li>Workflow used to produce and validate three portfolio anchors</li>
+                <li>Revenue-generating AI workflow system</li>
+                <li>Shipped state-driven HTML5 game</li>
+                <li>Client-facing press & booking platform</li>
+                <li>Each includes production-grade README, public case study, and ATS-safe resume bullets</li>
+                <li>Cross-model validation increased confidence in external legibility prior to deployment</li>
+            </ul>
+
+            <h2>What This Demonstrates</h2>
+            <ul>
+                <li>Structured information compression</li>
+                <li>Deterministic artifact generation from exploratory AI threads</li>
+                <li>Multi-agent bias reduction strategy</li>
+                <li>Human-in-the-loop governance</li>
+                <li>Tone normalization across domains</li>
+                <li>Repeatable documentation methodology</li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
