@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ken's Supply Co - Case study">
-    <title>Ken's Supply Co – Ken St. Lawrence</title>
+    <meta name="description" content="AI-Assisted eCommerce Workflow - Case study">
+    <title>AI-Assisted eCommerce Workflow – Ken St. Lawrence</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -12,42 +12,97 @@
         <a href="../" class="back-link">← Back to home</a>
 
         <article class="case-study">
-            <h1>Ken's Supply Co</h1>
+            <h1>AI-Assisted eCommerce Workflow</h1>
             <div class="meta">
-                <strong>Role:</strong> Systems design, operations<br>
-                <strong>Tools:</strong> Airtable, Sheets, Logistics planning<br>
-                <strong>Timeline:</strong> 3 months
+                <strong>Role:</strong> Workflow design, AI operations, listing execution<br>
+                <strong>Tools:</strong> LLM-assisted prompting, eBay platform tools, USPS logistics<br>
+                <strong>Timeline:</strong> 3 months<br>
+                <strong>Results:</strong> ~$2,000 revenue | 30 transactions | 100% positive feedback
             </div>
 
             <h2>Context</h2>
-            <p>A small maker collective needed a reliable system for sourcing, managing, and distributing supplies to members. Manual processes led to bottlenecks, inventory mismatches, and inefficient communication.</p>
+            <p>Manual listing of collectible inventory (retro games, consoles, comics, knives) was repetitive and time-intensive. Each listing required title writing, price research, categorization, shipping estimation, and sales strategy decisions. Average listing time ranged from 15–25 minutes per item.</p>
+
+            <p>The objective was to design a repeatable, AI-assisted workflow that reduced listing time without sacrificing pricing accuracy, authenticity verification, or buyer trust.</p>
 
             <h2>Strategy</h2>
             <ul>
-                <li>Map existing workflows to identify pain points</li>
-                <li>Design centralized database for inventory tracking</li>
-                <li>Automate ordering and distribution notifications</li>
-                <li>Create role-based access for different team members</li>
+                <li>Separate repetitive formatting tasks from human judgment</li>
+                <li>Harden output structure to eliminate drift</li>
+                <li>Standardize shipping method (USPS Ground Advantage)</li>
+                <li>Maintain human control over pricing validation and risk decisions</li>
             </ul>
 
             <h2>Execution</h2>
+
+            <p><strong>Phase 1 – Exploratory Iteration</strong></p>
             <ul>
-                <li>Built inventory management system in Airtable with custom workflows</li>
-                <li>Set up automated alerts for low stock and pending orders</li>
-                <li>Created member-facing portal for requesting and tracking supplies</li>
-                <li>Documented procedures for onboarding new suppliers and members</li>
-                <li>Trained team on system usage and maintenance</li>
+                <li>Tested flexible prompts in live operational conditions</li>
+                <li>Identified failure modes: format inconsistency, verbosity, pricing drift, context bleed</li>
+                <li>Observed that variability increased correction time</li>
+            </ul>
+
+            <p><strong>Phase 2 – Constraint Hardening</strong></p>
+            <ul>
+                <li>Introduced strict output template:
+                    <ul>
+                        <li>Selling strategy summary</li>
+                        <li>Copy-paste title</li>
+                        <li>Categorization information</li>
+                        <li>Copy-paste description</li>
+                        <li>Shipping weight and dimensions</li>
+                        <li>Pricing recommendation (BIN vs. auction with rationale)</li>
+                    </ul>
+                </li>
+                <li>Eliminated structural drift</li>
+                <li>Treated model as formatting and research accelerator, not decision authority</li>
+            </ul>
+
+            <p><strong>Phase 3 – Operational Scaling</strong></p>
+            <ul>
+                <li>~5 minutes: photograph item</li>
+                <li>~1 minute: upload and verify authenticity</li>
+                <li>~2 minutes: validate pricing</li>
+                <li>~1 minute: finalize listing</li>
+                <li>Average total time: ~5–7 minutes per listing</li>
+                <li>Standardized shipping reduced post-sale friction</li>
+                <li>Inventory pacing maintained consistent account activity</li>
+            </ul>
+
+            <h2>Workflow Design</h2>
+
+            <p><strong>AI Responsibilities</strong></p>
+            <ul>
+                <li>Structured listing generation</li>
+                <li>Comparable price approximation</li>
+                <li>Shipping estimate standardization</li>
+                <li>Tone normalization</li>
+            </ul>
+
+            <p><strong>Human Responsibilities</strong></p>
+            <ul>
+                <li>Authenticity verification</li>
+                <li>Condition interpretation</li>
+                <li>Pricing validation</li>
+                <li>Account pacing strategy</li>
+                <li>Risk management</li>
             </ul>
 
             <h2>Outcome</h2>
             <ul>
-                <li>Reduced order fulfillment time by 60%</li>
-                <li>Eliminated stockouts through proactive tracking</li>
-                <li>System in use and scaled to support 2x membership growth</li>
+                <li>~$2,000 revenue generated</li>
+                <li>30 completed transactions</li>
+                <li>100% positive feedback</li>
+                <li>Listing time reduced from ~20 minutes to 5–7 minutes</li>
+                <li>Standardized output across varied inventory categories</li>
             </ul>
 
             <div class="case-study-links">
-                <p><strong>View storefront:</strong> <a href="https://www.ebay.com/usr/kens_supply_co" target="_blank">Ken's Supply Co on eBay</a></p>
+                <p><strong>View storefront:</strong> 
+                    <a href="https://www.ebay.com/usr/kens_supply_co" target="_blank">
+                        Ken's Supply Co on eBay
+                    </a>
+                </p>
             </div>
         </article>
     </div>
